@@ -1,9 +1,7 @@
 //
 //  UIButton+Resizing.m
-//  RedDrive
 //
 //  Created by Jonathan Green on 10/10/2014.
-//  Copyright (c) 2014 Wunelli. All rights reserved.
 //
 
 #import "UIButton+Resizing.h"
