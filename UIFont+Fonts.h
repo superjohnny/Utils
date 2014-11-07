@@ -1,9 +1,9 @@
 //
 //  UIFont+Fonts.h
-//  Utils
+//  LVDriving
 //
 //  Created by Jonathan Green on 22/10/2014.
-//  Copyright (c) 2014 AngryYak Ltd. All rights reserved.
+//  Copyright (c) 2014 Wunelli Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -23,5 +23,16 @@
 + (UIFont *) progressBarTitle;
 + (UIFont *) progressBarTitleBold;
 + (UIFont *) progressBarKey;
-
++ (UIFont *) skipButton;
++ (UIFont *) recordingTitle;
++ (UIFont *) recordingSubtitle;
++ (UIFont *) discountHeadline;
++ (UIFont *) discountValue;
++ (UIFont *) discountFurther;
++ (UIFont *) journeyTitle;
++ (UIFont *) journeyDetail;
++ (UIFont *) whoseDrivingButton;
++ (UIFont *) inboxItemTitle;
++ (UIFont *) inboxItemBody;
++ (UIFont *) inboxItemSubscript;
 @end

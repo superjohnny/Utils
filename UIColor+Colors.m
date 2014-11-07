@@ -1,9 +1,9 @@
 //
 //  UIColor+Colors.m
-//  Utils
+//  LVDriving
 //
 //  Created by Jonathan Green on 13/10/2014.
-//  Copyright (c) 2014 AngryYak Ltd. All rights reserved.
+//  Copyright (c) 2014 Wunelli Ltd. All rights reserved.
 //
 
 #import "UIColor+Colors.h"
@@ -42,6 +42,14 @@ GLOBAL_COLOR_ALPHA(polo_blue, 0.55, 0.73, 0.78, 1);
 GLOBAL_COLOR_ALPHA(meat_brown, 0.94, 0.69, 0.22, 1);
 GLOBAL_COLOR_ALPHA(north_texas_green, 0, 0.59, 0.17, 1);
 GLOBAL_COLOR_ALPHA(bright_gray, 0.35, 0.35, 0.36, 1);
+
+GLOBAL_COLOR_ALPHA(ku_crimson, 0.98, 0, 0.07, 1);
+GLOBAL_COLOR_ALPHA(sun, 0.95, 0.58, 0.18, 1);
+GLOBAL_COLOR_ALPHA(sandstorm, 0.92, 0.82, 0.25, 1);
+GLOBAL_COLOR_ALPHA(mantis, 0.53, 0.8, 0.31, 1);
+
+GLOBAL_COLOR_ALPHA(shalimar, 1, 0.98, 0.71, 1);
+GLOBAL_COLOR_ALPHA(cerulean, 0, 0.5, 0.69, 1);
 @end
 
 

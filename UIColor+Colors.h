@@ -1,9 +1,9 @@
 //
 //  UIColor+Colors.h
-//  Utils
+//  LVDriving
 //
 //  Created by Jonathan Green on 13/10/2014.
-//  Copyright (c) 2014 AngryYak Ltd. All rights reserved.
+//  Copyright (c) 2014 Wunelli Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -63,4 +63,22 @@
 
 /** regular dark text colour */
 + (UIColor *)bright_gray;
+
+/** progress very bad colour */
++ (UIColor *)ku_crimson;
+
+/** progress bad colour */
++ (UIColor *)sun;
+
+/** progress ok colour */
++ (UIColor *)sandstorm;
+
+/** progress good and very good colour */
++ (UIColor *)mantis;
+
+/** who was driving background colour */
++ (UIColor *)shalimar;
+
+/** inbox subscript colour */
++ (UIColor *)cerulean;
 @end

@@ -1,15 +1,31 @@
 //
 //  NSAttributedString+Helper.m
-//  Utils
+//  LVDriving
 //
 //  Created by Jonathan Green on 16/10/2014.
-//  Copyright (c) 2014 AngryYak Ltd. All rights reserved.
+//  Copyright (c) 2014 Wunelli Ltd. All rights reserved.
 //
 
 #import "NSAttributedString+Helper.h"
 
 
 @implementation NSAttributedString (Helper)
+
++ (NSAttributedString *) attributedStringFromHtml:(NSString *) htmlString {
+
+    NSAttributedString *attributedString = [[NSAttributedString alloc]
+                                            initWithData:[htmlString dataUsingEncoding:NSUnicodeStringEncoding]
+                                            options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
+                                            documentAttributes:nil error:nil];
+    
+    return attributedString;
+}
+
++ (NSAttributedString *) attributedStringFromHtml:(NSString *) htmlString withCSS:(NSString *) css {
+    
+    htmlString = [htmlString stringByAppendingString:css];
+    return [NSAttributedString attributedStringFromHtml:htmlString];
+}
 
 - (CGSize) sizeForStringInWidth:(CGFloat) width {
     return [self sizeForStringInSize:CGSizeMake(width, CGFLOAT_MAX)];

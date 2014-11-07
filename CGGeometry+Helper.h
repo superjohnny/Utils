@@ -1,9 +1,9 @@
 //
 //  CGGeometry+Helper.h
-//  Utils
+//  LVDriving
 //
 //  Created by Jonathan Green on 15/10/2014.
-//  Copyright (c) 2014 AngryYak Ltd. All rights reserved.
+//  Copyright (c) 2014 Wunelli Ltd. All rights reserved.
 //
 
 /** Offsets the X of a point **/
@@ -52,7 +52,29 @@ CGRectUpdatePosition(CGRect rect, CGFloat x, CGFloat y)
     return CGRectMake(x, y, rect.size.width, rect.size.height);
 }
 
+CG_INLINE CGSize
+CGSizeEdgeInsetsInset(CGSize size, UIEdgeInsets inset)
+{
+    CGFloat width = size.width;
+    width -= inset.left;
+    width -= inset.right;
+    CGFloat height = size.height;
+    height -= inset.top;
+    height -= inset.bottom;
+    return CGSizeMake(width, height);
+}
 
+CG_INLINE CGSize
+CGSizeEdgeInsetsInflate(CGSize size, UIEdgeInsets inset)
+{
+    CGFloat width = size.width;
+    width += inset.left;
+    width += inset.right;
+    CGFloat height = size.height;
+    height += inset.top;
+    height += inset.bottom;
+    return CGSizeMake(width, height);
+}
 
 
 
