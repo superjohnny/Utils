@@ -1,9 +1,9 @@
 //
 //  VGDJourney+Formatter.h
-//  LVDriving
+//  Utils
 //
 //  Created by Jonathan Green on 20/10/2014.
-//  Copyright (c) 2014 Wunelli Ltd. All rights reserved.
+//  Copyright (c) 2014 AngryYak Ltd. All rights reserved.
 //
 
 #import <Vanguard/Vanguard.h>

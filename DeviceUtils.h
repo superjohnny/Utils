@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Utils : NSObject
+@interface DeviceUtils : NSObject
 
 + (NSString *) currentOperatingSystemVersion;
 + (BOOL) operatingSystemVersionLessThan:(NSString *) operatingSystemVersionToCompare;

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 AngryYak Ltd. All rights reserved.
 //
 
-#import "Utils.h"
+#import "DeviceUtils.h"
 
-@implementation Utils
+@implementation DeviceUtils
 
 #pragma mark - Operating system 
 
@@ -28,19 +28,19 @@
 #pragma mark - Screen sizes
 
 + (BOOL) deviceHasThreePointFiveInchScreen {
-    return [Utils deviceHasScreenWithIdiom:UIUserInterfaceIdiomPhone scale:2.0 height:480.0];
+    return [DeviceUtils deviceHasScreenWithIdiom:UIUserInterfaceIdiomPhone scale:2.0 height:480.0];
 }
 
 + (BOOL) deviceHasFourInchScreen {
-    return [Utils deviceHasScreenWithIdiom:UIUserInterfaceIdiomPhone scale:2.0 height:568.0];
+    return [DeviceUtils deviceHasScreenWithIdiom:UIUserInterfaceIdiomPhone scale:2.0 height:568.0];
 }
 
 + (BOOL) deviceHasFourPointSevenInchScreen {
-    return [Utils deviceHasScreenWithIdiom:UIUserInterfaceIdiomPhone scale:2.0 height:667.0];
+    return [DeviceUtils deviceHasScreenWithIdiom:UIUserInterfaceIdiomPhone scale:2.0 height:667.0];
 }
 
 + (BOOL) deviceHasFivePointFiveInchScreen {
-    return [Utils deviceHasScreenWithIdiom:UIUserInterfaceIdiomPhone scale:3.0 height:736.0];
+    return [DeviceUtils deviceHasScreenWithIdiom:UIUserInterfaceIdiomPhone scale:3.0 height:736.0];
 }
 
 + (BOOL) deviceHasScreenWithIdiom:(UIUserInterfaceIdiom) userInterfaceIdiom scale:(CGFloat) scale height:(CGFloat) height {
@@ -48,7 +48,7 @@
     CGRect mainScreenBounds = [[UIScreen mainScreen] bounds];
     CGFloat mainScreenHeight;
     
-    if ([Utils operatingSystemVersionLessThan:@"8.0"])
+    if ([DeviceUtils operatingSystemVersionLessThan:@"8.0"])
     {
         mainScreenHeight = mainScreenBounds.size.height;
     }

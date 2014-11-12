@@ -1,9 +1,9 @@
 //
 //  UIView+FrameHelper.m
-//  LVDriving
+//  Utils
 //
 //  Created by Jonathan Green on 14/10/2014.
-//  Copyright (c) 2014 Wunelli Ltd. All rights reserved.
+//  Copyright (c) 2014 AngryYak Ltd. All rights reserved.
 //
 
 #import "UIView+FrameHelper.h"
