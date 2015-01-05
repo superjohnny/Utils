@@ -14,7 +14,10 @@
 //+ (UIColor *)limerick;
 
 /** button foreground colour */
-+ (UIColor *)apple;
+//+ (UIColor *)apple;
+
+/** button foreground colour */
++ (UIColor *)christi;
 
 /** button background colour */
 + (UIColor *)la_palma;
@@ -58,7 +61,7 @@
 /** speed progress fill colour */
 + (UIColor *)meat_brown;
 
-/** smoothness progress fill colour, and link colour */
+/** smoothness progress fill colour, and link colour, and progress very good colour */
 + (UIColor *)north_texas_green;
 
 /** regular dark text colour */
@@ -73,8 +76,10 @@
 /** progress ok colour */
 + (UIColor *)sandstorm;
 
-/** progress good and very good colour */
+/** progress good colour */
 + (UIColor *)mantis;
+
+
 
 /** who was driving background colour */
 + (UIColor *)shalimar;
