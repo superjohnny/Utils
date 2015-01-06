@@ -55,9 +55,7 @@
 
 - (BOOL) hasPrefixPattern:(NSString *)prefixPattern {
 
-    NSError *error;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:prefixPattern options:NSRegularExpressionCaseInsensitive error:&error];
-    NSRange range = [regex rangeOfFirstMatchInString:self options:NSMatchingReportCompletion range:NSMakeRange(0, self.length)];
+    NSRange range = [self rangeOfString:prefixPattern options:NSRegularExpressionSearch];
     
     return !(range.location == NSNotFound);
 }
