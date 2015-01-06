@@ -11,13 +11,19 @@
 
 @implementation NSURL (Extension)
 
-+ (NSURL*) URLWithStringHttpPrefix:(NSString *) string {
-    
-    return [NSURL URLWithString:[NSString ensurePrefix:string prefix:@"http://"]];
++ (NSURL*) URLWithStringHttpScheme:(NSString *) string {
+ 
+    return [NSURL URLWithString:[NSString ensurePrefixPattern:string prefixPattern:@"http(s)?://" defaultPrefix:@"http://"]];
 }
 
-+ (NSURL*) URLWithStringTelPrefix:(NSString *) string {
++ (NSURL*) URLWithStringTelScheme:(NSString *) string {
     
-    return [NSURL URLWithString:[NSString ensurePrefix:string prefix:@"tel://"]]; //telprompt: ?
+    return [NSURL URLWithString:[NSString ensurePrefix:string prefix:@"telprompt://"]]; //telprompt: ?
+}
+
++ (BOOL) appSupportsUrlScheme:(NSString *) scheme {
+    NSDictionary *urlTypes = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleURLTypes"][0];
+    NSArray *urlSchemes = [urlTypes objectForKey:@"CFBundleURLSchemes"];
+    return [urlSchemes indexOfObject:scheme] != NSNotFound;
 }
 @end
